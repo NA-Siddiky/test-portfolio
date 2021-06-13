@@ -124,38 +124,28 @@ const Skills = () => {
 
     const [getSkill, setGetSkill] = useState([]);
     const [skills, setSkills] = useState([mySkills]);
-    const [frontEnd, setFrontEnd] = useState(true);
-    const [backEnd, setBackEnd] = useState(false);
-    const [tools, setTools] = useState(false);
 
+    // useEffect(() => {
+    //     const specificSkill = mySkills.filter((skill) => skill.category === "frontEnd");
+    //     setGetSkill(specificSkill);
+    // }, [skills]);
 
-    useEffect(() => {
-        const specificSkill = mySkills.filter((skill) => skill.category === "frontEnd");
-        setGetSkill(specificSkill);
-    }, [skills]);
 
 
 
     const frontEndData = () => {
-        const specificSkill = mySkills.filter((skill) => skill.category === "frontEnd");
-        setGetSkill(specificSkill);
-        setFrontEnd(true);
-        setBackEnd(false);
-        setTools(false);
+        const frontEnd = getSkill.filter((skill) => skill.category === "frontEnd");
+        setGetSkill();
+        console.log(frontEnd);
     };
     const backEndData = () => {
-        const specificSkill = mySkills.filter((skill) => skill.category === "backEnd");
-        setGetSkill(specificSkill);
-        setFrontEnd(false);
-        setBackEnd(true);
-        setTools(false);
+        const backEnd = mySkills.filter((skill) => skill.category === "backEnd");
+        setGetSkill();
+
     };
     const toolsData = () => {
-        const specificSkill = mySkills.filter((skill) => skill.category === "tools");
-        setGetSkill(specificSkill);
-        setFrontEnd(false);
-        setBackEnd(false);
-        setTools(true);
+        const tools = mySkills.filter((skill) => skill.category === "tools");
+        setGetSkill();
     };
 
 
@@ -173,12 +163,12 @@ const Skills = () => {
 
             <div>
 
-                {getSkill.map(() => <p>abcd</p>)}
+                {/* {mySkills.filter((front) => (front.map(() => <p>abcd</p>)))} */}
 
             </div>
             <div>
 
-                {getSkill.map(() => <p>xyz</p>)}
+                {/* {mySkills.filter((back) => (back.map(() => <p>abcd</p>)))} */}
 
             </div>
             <div>
