@@ -1,0 +1,18 @@
+.profileImage {
+	width: 400px;
+}
+.styleOfHeader {
+	/* border: 1px solid black; */
+	/* padding: 0px 100px; */
+	background: linear-gradient(to right, 
+    #F6F6F6 78.7%,
+	#E4E5E0 22.3% 
+    );
+}
+	.headerProfileImage {
+		height: 80vh;
+		width: auto;
+	}
+	.styleOfHeader {
+		padding: 25px 50px;
+	}
