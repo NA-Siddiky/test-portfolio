@@ -4,6 +4,7 @@ import Header from '../../Header/Header/Header';
 import Blog from '../Blog/Blog';
 import Contact from '../Contact/Contact';
 import Experiences from '../Experiences/Experiences';
+import ExperienceBook from '../Experiences/ExperienceBook';
 import Projects from '../Projects/Projects';
 import Skills from '../Skills/Skills';
 import Vision from '../Vision/Vision';
@@ -19,6 +20,7 @@ const Home = () => {
             <Projects></Projects>
             <Experiences></Experiences>
             <Vision></Vision>
+            <ExperienceBook></ExperienceBook>
             <Blog></Blog>
             <Contact></Contact>
             <Footer></Footer>
